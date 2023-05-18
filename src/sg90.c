@@ -7,11 +7,6 @@
 
 sg90_t* sg90_init(uint8_t pin) 
 {  
-    if(pin > 16)
-    {
-        return NULL;
-    }
-
     sg90_t *s = (sg90_t*)malloc(sizeof(sg90_t));
     
     s->gpio_pin = pin;
