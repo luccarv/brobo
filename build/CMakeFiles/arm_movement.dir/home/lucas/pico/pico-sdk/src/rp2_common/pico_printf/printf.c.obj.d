@@ -22,9 +22,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
  /usr/include/newlib/assert.h \
- /home/lucas/Área\ de\ Trabalho/Brobo/build/generated/pico_base/pico/version.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/build/generated/pico_base/pico/version.h \
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/lucas/Área\ de\ Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h \
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h \
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \

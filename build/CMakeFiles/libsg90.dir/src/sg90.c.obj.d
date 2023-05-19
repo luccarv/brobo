@@ -1,6 +1,6 @@
 CMakeFiles/libsg90.dir/src/sg90.c.obj: \
- /home/lucas/Área\ de\ Trabalho/Brobo/src/sg90.c \
- /home/lucas/Área\ de\ Trabalho/Brobo/include/sg90.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/src/sg90.c \
+ /home/lucas/Área\ de\ Trabalho/brobo/include/sg90.h \
  /usr/include/newlib/inttypes.h /usr/include/newlib/newlib.h \
  /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h \
  /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/features.h \
@@ -14,9 +14,9 @@ CMakeFiles/libsg90.dir/src/sg90.c.obj: \
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
- /home/lucas/Área\ de\ Trabalho/Brobo/build/generated/pico_base/pico/version.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/build/generated/pico_base/pico/version.h \
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/lucas/Área\ de\ Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h \
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h \
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \

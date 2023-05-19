@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

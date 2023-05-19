@@ -107,12 +107,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/lucas/pico/pico-sdk/src/rp2_common/pico_unique_id/CMakeLists.txt"
   "/home/lucas/pico/pico-sdk/src/rp2_common/tinyusb/CMakeLists.txt"
   "/home/lucas/pico/pico-sdk/tools/CMakeLists.txt"
+  "/home/lucas/pico/pico-sdk/tools/FindELF2UF2.cmake"
   "/home/lucas/pico/pico-sdk/tools/FindPioasm.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cfgcmd.txt.in"
   "../pico_sdk_import.cmake"
   "../test/CMakeLists.txt"
@@ -146,6 +148,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "generated/pico_base/pico/version.h"
   "generated/pico_base/pico/config_autogen.h"
@@ -235,8 +238,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/brobo.dir/DependInfo.cmake"
   "CMakeFiles/libsg90.dir/DependInfo.cmake"
   "CMakeFiles/arm_movement.dir/DependInfo.cmake"
+  "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"

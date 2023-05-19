@@ -1,7 +1,7 @@
 CMakeFiles/arm_movement.dir/src/arm_movement.c.obj: \
- /home/lucas/Área\ de\ Trabalho/Brobo/src/arm_movement.c \
- /home/lucas/Área\ de\ Trabalho/Brobo/include/arm_movement.h \
- /home/lucas/Área\ de\ Trabalho/Brobo/include/sg90.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/src/arm_movement.c \
+ /home/lucas/Área\ de\ Trabalho/brobo/include/arm_movement.h \
+ /home/lucas/Área\ de\ Trabalho/brobo/include/sg90.h \
  /usr/include/newlib/inttypes.h /usr/include/newlib/newlib.h \
  /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h \
  /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/features.h \

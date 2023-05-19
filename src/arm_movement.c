@@ -27,12 +27,12 @@ float3_t *arm_get_angles(float3_t *pos, float3_t *size)
 
 arm *arm_init(uint16_t gpio1, uint16_t gpio2, uint16_t gpio3, uint16_t gpio4, float3_t *size)
 {
-    arm *brobo = (arm*)malloc(sizeof(brobo));
+    arm *brobo = (arm*)malloc(sizeof(arm));
 
     brobo->m1 = sg90_init(gpio1);
     brobo->m2 = sg90_init(gpio2);
     brobo->m3 = sg90_init(gpio3);
-    brobo->m4 = sg90_init(gpio3);
+    brobo->m4 = sg90_init(gpio4);
     brobo->size = size;
 
     sg90_attach(brobo->m1);
@@ -58,8 +58,8 @@ void arm_move_to_angles(arm *brobo, float3_t *angles, int claw)
 void arm_move_to_origin(arm *brobo)
 {
     sg90_write(brobo->m1, 90.0f);
-    sg90_write(brobo->m2, 90.0f);
-    sg90_write(brobo->m3, 90.0f);
+    sg90_write(brobo->m2, 180.0f);
+    sg90_write(brobo->m3, 180.0f);
     sg90_write(brobo->m4, 180.0f);
 }
 

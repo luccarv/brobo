@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/lucas/pico/pico-sdk/tools/pioasm")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/lucas/Área de Trabalho/Brobo/build/pioasm")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/lucas/Área de Trabalho/brobo/build/pioasm")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

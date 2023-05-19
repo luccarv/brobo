@@ -1,4 +1,4 @@
-# Install script for directory: /home/lucas/Área de Trabalho/Brobo
+# Install script for directory: /home/lucas/Área de Trabalho/brobo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/cmake_install.cmake")
+  include("/home/lucas/Área de Trabalho/brobo/build/pico-sdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/lucas/Área de Trabalho/Brobo/build/test/cmake_install.cmake")
+  include("/home/lucas/Área de Trabalho/brobo/build/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lucas/Área de Trabalho/Brobo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lucas/Área de Trabalho/brobo/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

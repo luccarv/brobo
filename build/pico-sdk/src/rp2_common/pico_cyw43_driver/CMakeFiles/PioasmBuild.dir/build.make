@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/Brobo"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/brobo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/Brobo/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/brobo/build"
 
 # Utility rule file for PioasmBuild.
 
@@ -76,52 +76,52 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete: pico-
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Completed 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Completed 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pioasm" && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pioasm" && $(MAKE)
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cfgcmd.txt
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cache-Debug.cmake
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pioasm" && /usr/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GUnix Makefiles" "-C/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cache-Debug.cmake" /home/lucas/pico/pico-sdk/tools/pioasm
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pioasm" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pioasm" && /usr/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GUnix Makefiles" "-C/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cache-Debug.cmake" /home/lucas/pico/pico-sdk/tools/pioasm
+	cd "/home/lucas/Área de Trabalho/brobo/build/pioasm" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pioasm" && /usr/bin/cmake -E echo_append
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pioasm" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pioasm" && /usr/bin/cmake -E echo_append
+	cd "/home/lucas/Área de Trabalho/brobo/build/pioasm" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory /home/lucas/pico/pico-sdk/tools/pioasm
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pioasm"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory /home/lucas/pico/pico-sdk/tools/pioasm
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pioasm"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E make_directory "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch"
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update: pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'PioasmBuild'"
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'PioasmBuild'"
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E echo_append
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && /usr/bin/cmake -E touch "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update"
 
 PioasmBuild: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild
 PioasmBuild: pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete
@@ -140,10 +140,10 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build: Pioa
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/clean:
-	cd "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && $(CMAKE_COMMAND) -P CMakeFiles/PioasmBuild.dir/cmake_clean.cmake
+	cd "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" && $(CMAKE_COMMAND) -P CMakeFiles/PioasmBuild.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/clean
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/depend:
-	cd "/home/lucas/Área de Trabalho/Brobo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lucas/Área de Trabalho/Brobo" /home/lucas/pico/pico-sdk/src/rp2_common/pico_cyw43_driver "/home/lucas/Área de Trabalho/Brobo/build" "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" "/home/lucas/Área de Trabalho/Brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lucas/Área de Trabalho/brobo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lucas/Área de Trabalho/brobo" /home/lucas/pico/pico-sdk/src/rp2_common/pico_cyw43_driver "/home/lucas/Área de Trabalho/brobo/build" "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver" "/home/lucas/Área de Trabalho/brobo/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/depend
 

@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.22)
 
 include(pico_sdk_import.cmake)
 
-project(Brobo C CXX ASM)
+project(brobo C CXX ASM)
 set(CMAKE_C_STANDARD 11)
+
+add_executable(brobo)
+target_sources(brobo PRIVATE src/main.c)
 
 set(TEST "false")
 
@@ -25,3 +28,6 @@ target_include_directories(arm_movement PUBLIC include)
 
 target_link_libraries(libsg90 PUBLIC pico_stdlib hardware_pwm)
 target_link_libraries(arm_movement PUBLIC libsg90)
+target_link_libraries(brobo PUBLIC arm_movement)
+
+pico_add_extra_outputs(brobo)

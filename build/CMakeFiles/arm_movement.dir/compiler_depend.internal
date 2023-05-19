@@ -18,9 +18,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critic
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -54,9 +54,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_c
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -91,9 +91,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -128,9 +128,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -192,9 +192,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -233,9 +233,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeou
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -267,9 +267,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/dateti
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -342,9 +342,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -384,9 +384,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -419,9 +419,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_cla
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -450,9 +450,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clo
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -503,9 +503,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpi
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -544,9 +544,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -586,9 +586,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -625,9 +625,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_syn
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -657,9 +657,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_tim
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -695,9 +695,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uar
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -737,9 +737,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vre
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -793,9 +793,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_wat
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -825,9 +825,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xos
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -862,9 +862,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -903,9 +903,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -940,9 +940,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -980,9 +980,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/f
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1018,9 +1018,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/f
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1071,9 +1071,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1099,9 +1099,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platfor
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1153,9 +1153,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/types.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
  /usr/include/newlib/assert.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1212,9 +1212,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1265,9 +1265,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standar
  /usr/include/newlib/machine/ieeefp.h
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1350,9 +1350,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/s
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h
  /usr/include/newlib/assert.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1395,9 +1395,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_u
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1445,9 +1445,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/
  /usr/include/newlib/sys/features.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/version.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/version.h
  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/lucas/Área de Trabalho/Brobo/build/generated/pico_base/pico/config_autogen.h
+ /home/lucas/Área de Trabalho/brobo/build/generated/pico_base/pico/config_autogen.h
  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
@@ -1487,9 +1487,9 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/
  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
 
 CMakeFiles/arm_movement.dir/src/arm_movement.c.obj
- /home/lucas/Área de Trabalho/Brobo/src/arm_movement.c
- /home/lucas/Área de Trabalho/Brobo/include/arm_movement.h
- /home/lucas/Área de Trabalho/Brobo/include/sg90.h
+ /home/lucas/Área de Trabalho/brobo/src/arm_movement.c
+ /home/lucas/Área de Trabalho/brobo/include/arm_movement.h
+ /home/lucas/Área de Trabalho/brobo/include/sg90.h
  /usr/include/newlib/inttypes.h
  /usr/include/newlib/newlib.h
  /usr/include/newlib/_newlib_version.h

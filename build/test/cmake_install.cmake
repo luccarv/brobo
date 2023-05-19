@@ -1,4 +1,4 @@
-# Install script for directory: /home/lucas/Área de Trabalho/Brobo/test
+# Install script for directory: /home/lucas/Área de Trabalho/brobo/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

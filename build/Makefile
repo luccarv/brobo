@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/Brobo"
+CMAKE_SOURCE_DIR = "/home/lucas/Área de Trabalho/brobo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/Brobo/build"
+CMAKE_BINARY_DIR = "/home/lucas/Área de Trabalho/brobo/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" "/home/lucas/Área de Trabalho/Brobo/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" "/home/lucas/Área de Trabalho/brobo/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/Brobo/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named brobo
+
+# Build rule for target.
+brobo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brobo
+.PHONY : brobo
+
+# fast build rule for target.
+brobo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/build
+.PHONY : brobo/fast
+
+#=============================================================================
 # Target rules for targets named libsg90
 
 # Build rule for target.
@@ -141,6 +154,19 @@ arm_movement: cmake_check_build_system
 arm_movement/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/build
 .PHONY : arm_movement/fast
+
+#=============================================================================
+# Target rules for targets named ELF2UF2Build
+
+# Build rule for target.
+ELF2UF2Build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELF2UF2Build
+.PHONY : ELF2UF2Build
+
+# fast build rule for target.
+ELF2UF2Build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
+.PHONY : ELF2UF2Build/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -212,6 +238,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/lucas/p
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -221,6 +248,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/lucas/pic
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -230,6 +258,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/lucas/pic
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -239,6 +268,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/lucas/pico/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -248,6 +278,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/lucas/pico/pico-
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -257,6 +288,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/lucas/pico/pico-
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -266,6 +298,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/lucas/pico/pico-sd
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -275,6 +308,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.i: home/lucas/pico/pico-sdk/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -284,6 +318,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.s: home/lucas/pico/pico-sdk/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -293,6 +328,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/sem.obj: home/lucas/pico/pico-sdk/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -302,6 +338,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/sem.i: home/lucas/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -311,6 +348,7 @@ home/lucas/pico/pico-sdk/src/common/pico_sync/sem.s: home/lucas/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -320,6 +358,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/time.obj: home/lucas/pico/pico-sdk
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_time/time.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -329,6 +368,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/time.i: home/lucas/pico/pico-sdk/s
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_time/time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -338,6 +378,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/time.s: home/lucas/pico/pico-sdk/s
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_time/time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -347,6 +388,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -356,6 +398,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/lucas/pico/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -365,6 +408,7 @@ home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/lucas/pico/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -374,6 +418,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/datetime.obj: home/lucas/pico/pico
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -383,6 +428,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/datetime.i: home/lucas/pico/pico-s
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -392,6 +438,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/datetime.s: home/lucas/pico/pico-s
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -401,6 +448,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/pheap.obj: home/lucas/pico/pico-sd
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -410,6 +458,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/pheap.i: home/lucas/pico/pico-sdk/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -419,6 +468,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/pheap.s: home/lucas/pico/pico-sdk/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -428,6 +478,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/queue.obj: home/lucas/pico/pico-sd
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -437,6 +488,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/queue.i: home/lucas/pico/pico-sdk/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -446,6 +498,7 @@ home/lucas/pico/pico-sdk/src/common/pico_util/queue.s: home/lucas/pico/pico-sdk/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -455,6 +508,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -464,6 +518,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/lucas/pico/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -473,6 +528,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/lucas/pico/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -482,6 +538,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/lucas/p
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -491,6 +548,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/lucas/pic
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -500,6 +558,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/lucas/pic
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -509,6 +568,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/lucas
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -518,6 +578,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -527,6 +588,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -536,6 +598,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -545,6 +608,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/lucas/pico/pi
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -554,6 +618,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/lucas/pico/pico
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -563,6 +628,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/lucas/pico/pico
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -572,6 +638,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -581,6 +648,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/lucas/pico/pi
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -590,6 +658,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/lucas/pico/pico
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -599,6 +668,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/lucas/pico/pico
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -608,6 +678,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -617,6 +688,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -626,6 +698,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -635,6 +708,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -644,6 +718,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/lucas/pico/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -653,6 +728,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/lucas/pico/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -662,6 +738,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -671,6 +748,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -680,6 +758,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -689,6 +768,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -698,6 +778,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -707,6 +788,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -716,6 +798,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/luc
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -725,6 +808,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/lucas
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -734,6 +818,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/lucas
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -743,6 +828,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -752,6 +838,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -761,6 +848,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -770,6 +858,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/luc
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -779,6 +868,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -788,6 +878,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/lucas/pico/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -797,6 +888,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/lucas/pico/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -806,6 +898,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -815,6 +908,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/lucas
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -824,6 +918,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/lu
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -833,6 +928,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/luca
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -842,6 +938,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/luca
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -851,6 +948,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/lucas/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -860,6 +958,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/lucas/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -869,6 +968,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/lucas/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -878,6 +978,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -887,6 +988,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/lucas/p
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -896,6 +998,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/luca
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -905,6 +1008,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/lucas/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -914,6 +1018,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/lucas/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -923,6 +1028,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/lucas/pi
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -932,6 +1038,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/lucas/pico
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -941,6 +1048,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/lucas/pico
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -950,6 +1058,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/l
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -959,6 +1068,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj:
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -968,6 +1078,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/lucas/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -977,6 +1088,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/lucas/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -986,6 +1098,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/lucas/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -995,6 +1108,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/luc
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1004,6 +1118,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/lucas/p
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1013,6 +1128,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/lucas/pic
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1022,6 +1138,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/lucas/pic
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1031,6 +1148,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1040,6 +1158,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1049,6 +1168,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1058,6 +1178,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/lucas/pic
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1067,6 +1188,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/lucas/pico/
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1076,6 +1198,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/lucas/pico/
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1085,6 +1208,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1094,6 +1218,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/l
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1103,6 +1228,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/l
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1112,6 +1238,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/lucas/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1121,6 +1248,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1130,6 +1258,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/lu
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1139,6 +1268,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/lu
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1148,6 +1278,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/lucas/pico/pi
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1157,6 +1288,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/lucas/pico/pico
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1166,6 +1298,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/lucas/pico/pico
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1175,6 +1308,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/luc
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1184,6 +1318,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/lucas
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1193,6 +1328,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/lucas
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1202,6 +1338,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/lucas/pico/
 
 # target to build an object file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1211,6 +1348,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/lucas/pico/pi
 
 # target to preprocess a source file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1220,6 +1358,7 @@ home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/lucas/pico/pi
 
 # target to generate assembly for a file
 home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1247,6 +1386,30 @@ src/arm_movement.s: src/arm_movement.c.s
 src/arm_movement.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/src/arm_movement.c.s
 .PHONY : src/arm_movement.c.s
+
+src/main.obj: src/main.c.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/src/main.c.obj
+.PHONY : src/main.c.obj
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 src/sg90.obj: src/sg90.c.obj
 .PHONY : src/sg90.obj
@@ -1280,11 +1443,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ELF2UF2Build"
 	@echo "... PioasmBuild"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... arm_movement"
+	@echo "... brobo"
 	@echo "... bs2_default"
 	@echo "... libsg90"
 	@echo "... home/lucas/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
@@ -1403,6 +1568,9 @@ help:
 	@echo "... src/arm_movement.obj"
 	@echo "... src/arm_movement.i"
 	@echo "... src/arm_movement.s"
+	@echo "... src/main.obj"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/sg90.obj"
 	@echo "... src/sg90.i"
 	@echo "... src/sg90.s"
