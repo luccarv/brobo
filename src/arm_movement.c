@@ -1,5 +1,6 @@
 #include "arm_movement.h"
 #include <math.h>
+#include <pico/stdlib.h>
 #include <stdlib.h>
 
 float3_t *float_vec_init(float x, float y, float z)
@@ -45,21 +46,26 @@ arm *arm_init(uint16_t gpio1, uint16_t gpio2, uint16_t gpio3, uint16_t gpio4, fl
 
 void arm_move_to_angles(arm *brobo, float3_t *angles, int claw)
 {
-    sg90_write(brobo->m1, angles->a);
-    sg90_write(brobo->m2, angles->b);
-    sg90_write(brobo->m3, angles->c);
-
     if(claw)
         sg90_write(brobo->m4, 0.0f);
     else
         sg90_write(brobo->m4, 180.0f);
+
+    sg90_write(brobo->m1, angles->a-13.0f);
+    sleep_ms(600);
+
+    sg90_write(brobo->m3, angles->c-5.0f);
+    sleep_ms(600);
+
+    sg90_write(brobo->m2, angles->b-10.0f);
+    sleep_ms(600);
 }
 
 void arm_move_to_origin(arm *brobo)
 {
-    sg90_write(brobo->m1, 90.0f);
-    sg90_write(brobo->m2, 180.0f);
-    sg90_write(brobo->m3, 180.0f);
+    sg90_write(brobo->m1, 90.0f-13.0f);
+    sg90_write(brobo->m2, 0.0f);
+    sg90_write(brobo->m3, 0.0f);
     sg90_write(brobo->m4, 180.0f);
 }
 
@@ -67,7 +73,7 @@ void arm_move_to_xyz(arm *brobo, float3_t *pos, int claw)
 {
     float3_t *ang = arm_get_angles(pos, brobo->size);
 
-    ang->a -= M_PI_2;
+    ang->a -= M_PI;
     ang->b -= 0.0f;
     ang->c -= -M_PI_2;
 
@@ -89,3 +95,27 @@ void arm_move_to_xyz(arm *brobo, float3_t *pos, int claw)
     arm_move_to_angles(brobo, ang, claw);
 }
 
+void arm_move_joystick(arm *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_t bz2, uint16_t bg, float3_t *prev_pos) 
+{
+    x *= 180.0f/4095.0f ;
+
+    y *= 180.0f/4095.0f;
+
+    if(x - prev_pos->a < 3.0f || prev_pos->a - x < 3.0f)
+        prev_pos->a = x;
+
+    if(y - prev_pos->b < 3.0f || prev_pos->b - x < 3.0f)
+        prev_pos->b = x;
+
+    if(bz1 == 1 && bz2 == 0)
+        prev_pos->c += 2.0f;
+    else if (bz1 == 0 && bz2 == 1)
+        prev_pos->c -= 2.0f;
+
+    if(prev_pos->c - 180.0f > 0.01f)
+        prev_pos->c = 180.0f;
+    else if(prev_pos->c < 0.0f)
+        prev_pos->c = 0.0f;
+
+    arm_move_to_xyz(brobo, prev_pos, bg);
+}
