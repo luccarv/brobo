@@ -26,15 +26,17 @@ float3_t *arm_get_angles(float3_t *pos, float3_t *size)
     return float_vec_init(a, b, c);
 }
 
-arm *arm_init(uint16_t gpio1, uint16_t gpio2, uint16_t gpio3, uint16_t gpio4, float3_t *size)
+arm_t *arm_init(uint16_t gpio1, uint16_t gpio2, uint16_t gpio3, uint16_t gpio4, float3_t *size)
 {
-    arm *brobo = (arm*)malloc(sizeof(arm));
+    arm_t *brobo = (arm_t*)malloc(sizeof(arm_t));
 
     brobo->m1 = sg90_init(gpio1);
     brobo->m2 = sg90_init(gpio2);
     brobo->m3 = sg90_init(gpio3);
     brobo->m4 = sg90_init(gpio4);
     brobo->size = size;
+
+    brobo->prev_angles = float_vec_init(90.0f-13.0f, 0.0f, 0.0f);
 
     sg90_attach(brobo->m1);
     sg90_attach(brobo->m2);
@@ -44,32 +46,146 @@ arm *arm_init(uint16_t gpio1, uint16_t gpio2, uint16_t gpio3, uint16_t gpio4, fl
     return brobo;
 }
 
-void arm_move_to_angles(arm *brobo, float3_t *angles, int claw)
+void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
 {
     if(claw)
         sg90_write(brobo->m4, 0.0f);
     else
         sg90_write(brobo->m4, 180.0f);
 
-    sg90_write(brobo->m1, angles->a-13.0f);
-    sleep_ms(600);
+    int i = 0;
 
-    sg90_write(brobo->m3, angles->c-5.0f);
-    sleep_ms(600);
+    if(brobo->prev_angles->a < angles->a)
+    {
+        for(i = brobo->prev_angles->a; i <= angles->a - 13.0f; i += 2)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+    }
+    else if(brobo->prev_angles->a > angles->a)
+    {
+        for(i = brobo->prev_angles->a; i >= angles->a - 13.0f; i -= 2)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+    }
+    
+    if(brobo->prev_angles->c != angles->c)
+    {
+        sg90_write(brobo->m3, angles->c + 10.0f);
+        sleep_ms(600);
+    }
 
-    sg90_write(brobo->m2, angles->b-10.0f);
-    sleep_ms(600);
+    if(brobo->prev_angles->b < angles->b)
+    {
+        for(int i = brobo->prev_angles->b; i <= angles->b - 13.0f; i += 2)
+        {
+            sg90_write(brobo->m2, (float) i);
+            sleep_ms(40);
+        }
+    }    
+    else if(brobo->prev_angles->b < angles->b)
+    {
+        for(int i = brobo->prev_angles->b; i >= angles->b - 13.0f; i -= 2)
+        {
+            sg90_write(brobo->m2, (float) i);
+            sleep_ms(40);
+        }
+    }
+    brobo->prev_angles = angles;
 }
 
-void arm_move_to_origin(arm *brobo)
+
+void arm_move_to_joystick_angles(arm_t *brobo, float3_t *angles, int claw)
 {
-    sg90_write(brobo->m1, 90.0f-13.0f);
-    sg90_write(brobo->m2, 0.0f);
-    sg90_write(brobo->m3, 0.0f);
-    sg90_write(brobo->m4, 180.0f);
+    if(claw)
+        sg90_write(brobo->m4, 0.0f);
+    else
+        sg90_write(brobo->m4, 180.0f);
+
+    int i = 0;
+
+    if(brobo->prev_angles->a < angles->a)
+    {
+        for(i = brobo->prev_angles->a; i <= angles->a - 13.0f; i += 7)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+    }
+    else if(brobo->prev_angles->a > angles->a)
+    {
+        for(i = brobo->prev_angles->a; i >= angles->a - 13.0f; i -= 7)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+    }
+
+    if(brobo->prev_angles->b < angles->b)
+    {
+        for(i = brobo->prev_angles->b; i <= angles->b - 13.0f; i += 7)
+        {
+            sg90_write(brobo->m2, (float) i );
+            sleep_ms(40);
+        }
+    }
+    else if(brobo->prev_angles->b > angles->b)
+    {
+        for(i = brobo->prev_angles->b; i >= angles->b - 13.0f; i -= 7)
+        {
+            sg90_write(brobo->m2, (float) i );
+            sleep_ms(40);
+        }
+    }
+
+    if(brobo->prev_angles->c < angles->c)
+    {
+        for(i = brobo->prev_angles->c; i <= angles->c - 10.0f; i += 7)
+        {
+            sg90_write(brobo->m3, (float) i );
+            sleep_ms(40);
+        }
+    }
+    else if(brobo->prev_angles->c > angles->c)
+    {
+        for(i = brobo->prev_angles->c; i >= angles->c - 10.0f; i -= 7)
+        {
+            sg90_write(brobo->m3, (float) i );
+            sleep_ms(40);
+        }
+    }
+    brobo->prev_angles = angles;
 }
 
-void arm_move_to_xyz(arm *brobo, float3_t *pos, int claw)
+void arm_move_to_origin(arm_t *brobo)
+{
+    sg90_write(brobo->m4, 180.0f);
+    
+    int i = 0;
+    
+    for(i = brobo->prev_angles->b; i >= 0; i -= 7)
+    {
+        sg90_write(brobo->m2, i);
+        sleep_ms(40);
+    }
+    
+    for(i = brobo->prev_angles->c; i >= 0; i -= 7)
+    {
+        sg90_write(brobo->m3, i);
+        sleep_ms(40);
+    }
+
+    sleep_ms(200);
+    
+    sg90_write(brobo->m1, 90.0f-13.0f);
+
+    brobo->prev_angles = float_vec_init(90.0f - 13.0f, 0.0f, 0.0f);
+}
+
+void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
 {
     float3_t *ang = arm_get_angles(pos, brobo->size);
 
@@ -95,7 +211,7 @@ void arm_move_to_xyz(arm *brobo, float3_t *pos, int claw)
     arm_move_to_angles(brobo, ang, claw);
 }
 
-void arm_move_joystick(arm *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_t bz2, uint16_t bg, float3_t *prev_pos) 
+void arm_move_joystick(arm_t *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_t bz2, uint16_t bg, float3_t *prev_pos) 
 {
     x *= 180.0f/4095.0f ;
 
@@ -104,12 +220,12 @@ void arm_move_joystick(arm *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_
     if(x - prev_pos->a < 3.0f || prev_pos->a - x < 3.0f)
         prev_pos->a = x;
 
-    if(y - prev_pos->b < 3.0f || prev_pos->b - x < 3.0f)
-        prev_pos->b = x;
+    if(y - prev_pos->b < 3.0f || prev_pos->b - y < 3.0f)
+        prev_pos->b = y;
 
-    if(bz1 == 1 && bz2 == 0)
+    if(bz1 >= 1 && bz2 <= 0)
         prev_pos->c += 2.0f;
-    else if (bz1 == 0 && bz2 == 1)
+    else if (bz1 <= 0 && bz2 >= 1)
         prev_pos->c -= 2.0f;
 
     if(prev_pos->c - 180.0f > 0.01f)
@@ -117,5 +233,5 @@ void arm_move_joystick(arm *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_
     else if(prev_pos->c < 0.0f)
         prev_pos->c = 0.0f;
 
-    arm_move_to_xyz(brobo, prev_pos, bg);
+    arm_move_to_joystick_angles(brobo, prev_pos, bg);
 }
