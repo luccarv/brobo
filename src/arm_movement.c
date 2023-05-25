@@ -62,6 +62,8 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
             sg90_write(brobo->m1, (float) i );
             sleep_ms(40);
         }
+        sg90_write(brobo->m1, angles->a-13.0f);
+        sleep_ms(40);
     }
     else if(brobo->prev_angles->a > angles->a)
     {
@@ -70,11 +72,13 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
             sg90_write(brobo->m1, (float) i );
             sleep_ms(40);
         }
+        sg90_write(brobo->m1, angles->a-13.0f);
+        sleep_ms(40);
     }
     
     if(brobo->prev_angles->c != angles->c)
     {
-        sg90_write(brobo->m3, angles->c + 10.0f);
+        sg90_write(brobo->m3, angles->c + 5.0f);
         sleep_ms(600);
     }
 
@@ -85,6 +89,8 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
             sg90_write(brobo->m2, (float) i);
             sleep_ms(40);
         }
+        sg90_write(brobo->m2, angles->b-13.0f);
+        sleep_ms(40);
     }    
     else if(brobo->prev_angles->b < angles->b)
     {
@@ -93,6 +99,8 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
             sg90_write(brobo->m2, (float) i);
             sleep_ms(40);
         }
+        sg90_write(brobo->m2, angles->b-13.0f);
+        sleep_ms(40);
     }
     brobo->prev_angles = angles;
 }
@@ -143,7 +151,7 @@ void arm_move_to_joystick_angles(arm_t *brobo, float3_t *angles, int claw)
 
     if(brobo->prev_angles->c < angles->c)
     {
-        for(i = brobo->prev_angles->c; i <= angles->c - 10.0f; i += 7)
+        for(i = brobo->prev_angles->c; i <= angles->c - 5.0f; i += 7)
         {
             sg90_write(brobo->m3, (float) i );
             sleep_ms(40);
@@ -151,7 +159,7 @@ void arm_move_to_joystick_angles(arm_t *brobo, float3_t *angles, int claw)
     }
     else if(brobo->prev_angles->c > angles->c)
     {
-        for(i = brobo->prev_angles->c; i >= angles->c - 10.0f; i -= 7)
+        for(i = brobo->prev_angles->c; i >= angles->c - 5.0f; i -= 7)
         {
             sg90_write(brobo->m3, (float) i );
             sleep_ms(40);
