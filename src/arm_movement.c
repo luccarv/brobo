@@ -199,45 +199,64 @@ void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
 
 void arm_move_joystick(arm_t *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_t bz2, uint16_t bg) 
 {
-    if(bg)
-        sg90_write(brobo->m4, 170.0f);
-    else
-        sg90_write(brobo->m4, 0.0f);
+    x *= 180.0f/4095.0f ;
 
-    if(x > 3048.0f)
-        brobo->prev_angles->a += 5.0f;
-    else if(x < 1048.0f)
-        brobo->prev_angles->a -= 5.0f;
+    y *= 180.0f/4095.0f;
 
-    if(y > 3048.0f)
-        brobo->prev_angles->b += 5.0f;
-    else if(y < 1048.0f)
-        brobo->prev_angles->b -= 5.0f;
+    float z = brobo->prev_angles->c;
+
+    int i = 0;
+    if(brobo->prev_angles->a < x + 13.0f)
+    {
+        for(i = brobo->prev_angles->a; i <= x; i += 2)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m1, x);
+        sleep_ms(40);
+    }
+    else if(brobo->prev_angles->a > x + 13.0f)
+    {
+        for(i = brobo->prev_angles->a; i >= x; i -= 2)
+        {
+            sg90_write(brobo->m1, (float) i );
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m1, x);
+        sleep_ms(40);
+    }
+
+    if(brobo->prev_angles->b < y + 13.0f)
+    {
+        for(int i = brobo->prev_angles->b; i <= y; i += 7)
+        {
+            sg90_write(brobo->m2, (float) i);
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m2, y);
+        sleep_ms(40);
+    }    
+    else if(brobo->prev_angles->b < y + 13.0f)
+    {
+        for(int i = brobo->prev_angles->b; i >= y; i -= 2)
+        {
+            sg90_write(brobo->m2, (float) i);
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m2, y);
+        sleep_ms(40);
+    }
 
     if(bz1 >= 1 && bz2 <= 0)
-        brobo->prev_angles->c += 5.0f;
+        z += 2.0f;
     else if (bz1 <= 0 && bz2 >= 1)
-        brobo->prev_angles->c -= 5.0f;
+        z -= 2.0f;
 
-    if(brobo->prev_angles->a - 180.0f > 0.01f)
-        brobo->prev_angles->a = 180.0f;
-    else if(brobo->prev_angles->a < 0.0f)
-        brobo->prev_angles->a = 0.0f;    
-        
-    if(brobo->prev_angles->b - 180.0f > 0.01f)
-        brobo->prev_angles->b = 180.0f;
-    else if(brobo->prev_angles->b < 0.0f)
-        brobo->prev_angles->b = 0.0f;
+    if(z - 180.0f > 0.01f)
+        z = 180.0f;
+    else if(z < 0.0f)
+        z = 0.0f;
 
-    if(brobo->prev_angles->c - 180.0f > 0.01f)
-        brobo->prev_angles->c = 180.0f;
-    else if(brobo->prev_angles->c < 0.0f)
-        brobo->prev_angles->c = 0.0f;
-
-    sg90_write(brobo->m1, brobo->prev_angles->a);
-    sleep_ms(40);
-    sg90_write(brobo->m1, brobo->prev_angles->b);
-    sleep_ms(40);
-    sg90_write(brobo->m1, brobo->prev_angles->c);
-    sleep_ms(40);
+    
 }
