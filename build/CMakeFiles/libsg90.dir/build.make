@@ -702,6 +702,20 @@ CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
+CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/libsg90.dir/flags.make
+CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/libsg90.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 # Object files for target libsg90
 libsg90_OBJECTS = \
 "CMakeFiles/libsg90.dir/src/sg90.c.obj" \
@@ -749,7 +763,8 @@ libsg90_OBJECTS = \
 "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 
 # External object files for target libsg90
 libsg90_EXTERNAL_OBJECTS =
@@ -800,9 +815,10 @@ liblibsg90.a: CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pic
 liblibsg90.a: CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 liblibsg90.a: CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 liblibsg90.a: CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+liblibsg90.a: CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 liblibsg90.a: CMakeFiles/libsg90.dir/build.make
 liblibsg90.a: CMakeFiles/libsg90.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX static library liblibsg90.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX static library liblibsg90.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libsg90.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libsg90.dir/link.txt --verbose=$(VERBOSE)
 

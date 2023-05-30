@@ -3,6 +3,8 @@
 #include <pico/stdlib.h>
 #include <stdlib.h>
 
+uint16_t isPressed = 0;
+
 float3_t *float_vec_init(float x, float y, float z)
 {
     float3_t *vec = (float3_t*)malloc(sizeof(float3_t));
@@ -118,7 +120,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
         sg90_write(brobo->m2, angles->b);
         sleep_ms(40);
     }    
-    else if(brobo->prev_angles->b < angles->b + 13.0f)
+    else if(brobo->prev_angles->b > angles->b + 13.0f)
     {
         for(int i = brobo->prev_angles->b; i >= angles->b; i -= 2)
         {
@@ -199,54 +201,59 @@ void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
 
 void arm_move_joystick(arm_t *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint16_t bz2, uint16_t bg) 
 {
+    if(bg)
+        isPressed = !isPressed;
+
     x *= 180.0f/4095.0f ;
 
     y *= 180.0f/4095.0f;
 
     float z = brobo->prev_angles->c;
 
+    /*
     int i = 0;
-    if(brobo->prev_angles->a < x + 13.0f)
+    if(brobo->prev_angles->a < x)
     {
         for(i = brobo->prev_angles->a; i <= x; i += 2)
         {
             sg90_write(brobo->m1, (float) i );
-            sleep_ms(40);
+            sleep_ms(20);
         }
         sg90_write(brobo->m1, x);
-        sleep_ms(40);
+        sleep_ms(20);
     }
-    else if(brobo->prev_angles->a > x + 13.0f)
+    else if(brobo->prev_angles->a > x)
     {
         for(i = brobo->prev_angles->a; i >= x; i -= 2)
         {
             sg90_write(brobo->m1, (float) i );
-            sleep_ms(40);
+            sleep_ms(20);
         }
         sg90_write(brobo->m1, x);
-        sleep_ms(40);
+        sleep_ms(20);
     }
 
-    if(brobo->prev_angles->b < y + 13.0f)
+    if(brobo->prev_angles->b < y)
     {
-        for(int i = brobo->prev_angles->b; i <= y; i += 7)
+        for(int i = brobo->prev_angles->b; i <= y; i += 2)
         {
             sg90_write(brobo->m2, (float) i);
-            sleep_ms(40);
+            sleep_ms(20);
         }
         sg90_write(brobo->m2, y);
-        sleep_ms(40);
+        sleep_ms(20);
     }    
-    else if(brobo->prev_angles->b < y + 13.0f)
+    else if(brobo->prev_angles->b > y)
     {
         for(int i = brobo->prev_angles->b; i >= y; i -= 2)
         {
             sg90_write(brobo->m2, (float) i);
-            sleep_ms(40);
+            sleep_ms(20);
         }
         sg90_write(brobo->m2, y);
-        sleep_ms(40);
+        sleep_ms(20);
     }
+    */
 
     if(bz1 >= 1 && bz2 <= 0)
         z += 2.0f;
@@ -258,5 +265,18 @@ void arm_move_joystick(arm_t *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint1
     else if(z < 0.0f)
         z = 0.0f;
 
-    
+        
+   sg90_write(brobo->m1, x - 13.0f);
+   sleep_ms(20);
+   sg90_write(brobo->m2, y - 13.0f);
+   sleep_ms(20);
+   sg90_write(brobo->m3, z - 9.0f);
+   sleep_ms(200);
+
+    if(isPressed)
+        sg90_write(brobo->m4, 170.0f);
+    else
+        sg90_write(brobo->m4, 0.0f);
+
+    brobo->prev_angles = float_vec_init(x, y, z);    
 }

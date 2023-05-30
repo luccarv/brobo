@@ -104,6 +104,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/lucas/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/lucas/pico/pico-sdk/src/rp2_common/boot_stage2/include"
   "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
@@ -117,6 +118,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d"
   "/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"

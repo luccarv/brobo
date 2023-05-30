@@ -394,6 +394,51 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.
   /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/lucas/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/lucas/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h
+
 CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c \
   /home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
   /home/lucas/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -1573,6 +1618,14 @@ CMakeFiles/arm_movement.dir/src/arm_movement.c.obj: ../src/arm_movement.c \
 
 /home/lucas/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c:
 
+/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
+
 /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
 /usr/include/newlib/sys/_timespec.h:
@@ -1586,6 +1639,8 @@ CMakeFiles/arm_movement.dir/src/arm_movement.c.obj: ../src/arm_movement.c \
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
 /usr/include/newlib/sys/types.h:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c:
 
 /usr/include/newlib/sys/lock.h:
 
@@ -1615,25 +1670,23 @@ CMakeFiles/arm_movement.dir/src/arm_movement.c.obj: ../src/arm_movement.c \
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:
 
-/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
-
 /home/lucas/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
 
 /usr/include/newlib/sys/cdefs.h:
 
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
-
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
 
-/usr/include/newlib/sys/config.h:
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h:
 
-/usr/include/newlib/_ansi.h:
+/usr/include/newlib/sys/config.h:
 
 /usr/include/newlib/sys/_locale.h:
 
@@ -1733,6 +1786,12 @@ generated/pico_base/pico/version.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
+/usr/include/newlib/math.h:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h:
+
 /home/lucas/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
 
 /usr/include/newlib/sys/time.h:
@@ -1759,6 +1818,10 @@ generated/pico_base/pico/version.h:
 
 /home/lucas/pico/pico-sdk/src/common/pico_time/timeout_helper.c:
 
+/usr/include/newlib/_ansi.h:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h:
+
 /home/lucas/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
@@ -1771,11 +1834,11 @@ generated/pico_base/pico/version.h:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/xosc.h:
 
+/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
+
 /home/lucas/pico/pico-sdk/src/rp2_common/boot_stage2/include/boot_stage2/config.h:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
-
-/home/lucas/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
 
@@ -1792,6 +1855,24 @@ generated/pico_base/pico/version.h:
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
 
 /home/lucas/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
+
+/usr/include/newlib/sys/stdio.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
+
+/home/lucas/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+/home/lucas/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
+
+/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
 
@@ -1815,16 +1896,6 @@ generated/pico_base/pico/version.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
 
-/usr/include/newlib/sys/stdio.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
-
 /usr/include/newlib/sys/reent.h:
 
 /usr/include/newlib/alloca.h:
@@ -1832,14 +1903,6 @@ generated/pico_base/pico/version.h:
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c:
 
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
-
-/home/lucas/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
-/home/lucas/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c:
 
@@ -1858,13 +1921,3 @@ generated/pico_base/pico/version.h:
 /home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 /home/lucas/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
-
-/home/lucas/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
-
-/home/lucas/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
-
-/home/lucas/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
-
-/usr/include/newlib/math.h:
-
-/home/lucas/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:

@@ -26,7 +26,7 @@ target_include_directories(libsg90 PUBLIC include)
 add_library(arm_movement src/arm_movement.c)
 target_include_directories(arm_movement PUBLIC include)
 
-target_link_libraries(libsg90 PUBLIC pico_stdlib hardware_pwm)
+target_link_libraries(libsg90 PUBLIC pico_stdlib hardware_pwm hardware_adc)
 target_link_libraries(arm_movement PUBLIC libsg90)
 target_link_libraries(brobo PUBLIC arm_movement)
 

@@ -702,6 +702,20 @@ CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_u
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/arm_movement.dir/flags.make
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/arm_movement.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 # Object files for target arm_movement
 arm_movement_OBJECTS = \
 "CMakeFiles/arm_movement.dir/src/arm_movement.c.obj" \
@@ -749,7 +763,8 @@ arm_movement_OBJECTS = \
 "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 
 # External object files for target arm_movement
 arm_movement_EXTERNAL_OBJECTS =
@@ -800,9 +815,10 @@ libarm_movement.a: CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_
 libarm_movement.a: CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 libarm_movement.a: CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 libarm_movement.a: CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+libarm_movement.a: CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 libarm_movement.a: CMakeFiles/arm_movement.dir/build.make
 libarm_movement.a: CMakeFiles/arm_movement.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX static library libarm_movement.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lucas/Área de Trabalho/brobo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX static library libarm_movement.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/arm_movement.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arm_movement.dir/link.txt --verbose=$(VERBOSE)
 

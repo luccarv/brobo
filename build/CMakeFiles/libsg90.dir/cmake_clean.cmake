@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj"
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+  "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"

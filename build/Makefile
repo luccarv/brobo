@@ -503,6 +503,36 @@ home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/lucas/pico/pico-sdk/src/common/pico_util/queue.c.s
 
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brobo.dir/build.make CMakeFiles/brobo.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libsg90.dir/build.make CMakeFiles/libsg90.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_movement.dir/build.make CMakeFiles/arm_movement.dir/home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
@@ -1479,6 +1509,9 @@ help:
 	@echo "... home/lucas/pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... home/lucas/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/lucas/pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... home/lucas/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"

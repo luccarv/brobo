@@ -1,5 +1,6 @@
 #include "arm_movement.h"
 #include "pico/stdlib.h"
+#include "hardware/adc.h"
 
 int main()
 {
@@ -60,11 +61,28 @@ int main()
     sleep_ms(2000);
     arm_move_to_origin(a);
     sleep_ms(2000);
+    
+   /* 
+    adc_init();
 
-    
-    
+    adc_gpio_init(26);
+    adc_gpio_init(27);
+
+    int x0 = 0;
+    int x1 = 0;
+    */
     for(;;)
     {
+        /*
+        adc_select_input(0);
+        x0 = adc_read();
+
+        adc_select_input(1);
+        x1 = adc_read();
+
+        arm_move_joystick(a, x0, x1, 0, 0, 0);
+
+        */
     }
 
     return 0;
