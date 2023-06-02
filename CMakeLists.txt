@@ -30,4 +30,7 @@ target_link_libraries(libsg90 PUBLIC pico_stdlib hardware_pwm hardware_adc)
 target_link_libraries(arm_movement PUBLIC libsg90)
 target_link_libraries(brobo PUBLIC arm_movement)
 
+pico_enable_stdio_usb(brobo 1)
+pico_enable_stdio_uart(brobo 0)
+
 pico_add_extra_outputs(brobo)

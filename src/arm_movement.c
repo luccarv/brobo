@@ -2,6 +2,7 @@
 #include <math.h>
 #include <pico/stdlib.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 uint16_t isPressed = 0;
 
@@ -53,13 +54,13 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
     if(claw)
         sg90_write(brobo->m4, 0.0f);
     else
-        sg90_write(brobo->m4, 100.0f);
+        sg90_write(brobo->m4, 170.0f);
 
     int i = 0;
 
     angles->a -= 13.0f;
-    angles->b -= 13.0f;
-    angles->c -= 9.0f;
+    angles->b -= 5.0f;
+    angles->c -= 2.0f;
 
     if(brobo->prev_angles->a < angles->a + 13.0f)
     {
@@ -89,7 +90,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
     }
     */
 
-    if(brobo->prev_angles->c < angles->c + 9.0f)
+    if(brobo->prev_angles->c < angles->c + 2.0f)
     {
         for(i = brobo->prev_angles->c; i <= angles->c; i += 5)
         {
@@ -99,7 +100,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
         sg90_write(brobo->m3, angles->c);
         sleep_ms(40);
     }
-    else if(brobo->prev_angles->c > angles->c + 9.0f)
+    else if(brobo->prev_angles->c > angles->c + 2.0f)
     {
         for(i = brobo->prev_angles->c; i >= angles->c; i -= 5)
         {
@@ -110,7 +111,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
         sleep_ms(40);
     }
 
-    if(brobo->prev_angles->b < angles->b + 13.0f)
+    if(brobo->prev_angles->b < angles->b + 5.0f)
     {
         for(int i = brobo->prev_angles->b; i <= angles->b; i += 7)
         {
@@ -120,7 +121,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
         sg90_write(brobo->m2, angles->b);
         sleep_ms(40);
     }    
-    else if(brobo->prev_angles->b > angles->b + 13.0f)
+    else if(brobo->prev_angles->b > angles->b + 5.0f)
     {
         for(int i = brobo->prev_angles->b; i >= angles->b; i -= 2)
         {
@@ -135,13 +136,34 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
 
 void arm_move_to_origin(arm_t *brobo)
 {
-    sg90_write(brobo->m4, 100.0f);
+    sg90_write(brobo->m4, 170.0f);
     
     int i = 0;
     
     for(i = brobo->prev_angles->b; i >= 0; i -= 7)
     {
         sg90_write(brobo->m2, i);
+        sleep_ms(40);
+    }
+
+    if(brobo->prev_angles->c < 45.0f)
+    {
+        for(i = brobo->prev_angles->c; i <= 45.0f - 9.0f; i += 7)
+        {
+            sg90_write(brobo->m3, (float) i );
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m3, 45.0f - 9.0f);
+        sleep_ms(40);
+    }
+    else if(brobo->prev_angles->c > 45.0f)
+    {
+        for(i = brobo->prev_angles->c; i >= 45.0f - 9.0f; i -= 7)
+        {
+            sg90_write(brobo->m3, (float) i );
+            sleep_ms(40);
+        }
+        sg90_write(brobo->m3, 45.0f - 9.0f);
         sleep_ms(40);
     }
 
@@ -178,7 +200,7 @@ void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
     float3_t *ang = arm_get_angles(pos, brobo->size);
 
     ang->a -= M_PI;
-    ang->b -= 0.0f;
+    ang->b -= M_PI_4;
     ang->c -= -M_PI_4;
 
     ang->a *= RAD2DEG;
@@ -195,6 +217,8 @@ void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
 
     if(ang->c < 0.0f)
         ang->c += 360.0f;
+
+    printf("a: %f, b: %f, c: %f \n", ang->a, ang->b, ang->c);
     
     arm_move_to_angles(brobo, ang, claw);
 }
