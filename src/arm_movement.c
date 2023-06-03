@@ -85,7 +85,7 @@ void arm_move_to_angles(arm_t *brobo, float3_t *angles, int claw)
     /*
     if(brobo->prev_angles->c != angles->c)
     {
-        sg90_write(brobo->m3, angles->c - 9.0f);
+        sg90_write(brobo->m3, angles->c - 5.0f);
         sleep_ms(600);
     }
     */
@@ -148,51 +148,31 @@ void arm_move_to_origin(arm_t *brobo)
 
     if(brobo->prev_angles->c < 45.0f)
     {
-        for(i = brobo->prev_angles->c; i <= 45.0f - 9.0f; i += 7)
+        for(i = brobo->prev_angles->c; i <= 45.0f - 5.0f; i += 7)
         {
             sg90_write(brobo->m3, (float) i );
             sleep_ms(40);
         }
-        sg90_write(brobo->m3, 45.0f - 9.0f);
+        sg90_write(brobo->m3, 45.0f - 5.0f);
         sleep_ms(40);
     }
     else if(brobo->prev_angles->c > 45.0f)
     {
-        for(i = brobo->prev_angles->c; i >= 45.0f - 9.0f; i -= 7)
+        for(i = brobo->prev_angles->c; i >= 45.0f - 5.0f; i -= 7)
         {
             sg90_write(brobo->m3, (float) i );
             sleep_ms(40);
         }
-        sg90_write(brobo->m3, 45.0f - 9.0f);
+        sg90_write(brobo->m3, 45.0f - 5.0f);
         sleep_ms(40);
     }
 
-    if(brobo->prev_angles->c < 45.0f)
-    {
-        for(i = brobo->prev_angles->c; i <= 45.0f - 9.0f; i += 7)
-        {
-            sg90_write(brobo->m3, (float) i );
-            sleep_ms(40);
-        }
-        sg90_write(brobo->m3, 45.0f - 9.0f);
-        sleep_ms(40);
-    }
-    else if(brobo->prev_angles->c > 45.0f)
-    {
-        for(i = brobo->prev_angles->c; i >= 45.0f - 9.0f; i -= 7)
-        {
-            sg90_write(brobo->m3, (float) i );
-            sleep_ms(40);
-        }
-        sg90_write(brobo->m3, 45.0f - 9.0f);
-        sleep_ms(40);
-    }
 
     sleep_ms(200);
     
     sg90_write(brobo->m1, 90.0f-13.0f);
 
-    brobo->prev_angles = float_vec_init(90.0f - 13.0f, 0.0f, 45.0f - 9.0f);
+    brobo->prev_angles = float_vec_init(90.0f - 13.0f, 0.0f, 45.0f - 5.0f);
 }
 
 void arm_move_to_xyz(arm_t *brobo, float3_t *pos, int claw)
@@ -294,7 +274,7 @@ void arm_move_joystick(arm_t *brobo, uint16_t x, uint16_t y, uint16_t bz1, uint1
    sleep_ms(20);
    sg90_write(brobo->m2, y - 13.0f);
    sleep_ms(20);
-   sg90_write(brobo->m3, z - 9.0f);
+   sg90_write(brobo->m3, z - 5.0f);
    sleep_ms(200);
 
     if(isPressed)
